@@ -26,9 +26,7 @@ jobs:
       - name: Lint (flake8)
         run: flake8 app/
       - name: Tests pytest + couverture
-        run: pytest --cov=app --cov-report=term-missing
-      # Approfondissement : faire échouer si la couverture < seuil
-      # run: pytest --cov=app --cov-fail-under=70
+        run: pytest --cov=app --cov-report=term-missing --cov-fail-under=70
 
   e2e:
     runs-on: ubuntu-latest
