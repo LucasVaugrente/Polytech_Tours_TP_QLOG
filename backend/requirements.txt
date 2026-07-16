@@ -14,3 +14,5 @@ email-validator==2.2.0
 pytest==8.3.4
 httpx==0.28.1
 pytest-cov==6.0.0
+
+flake==7.3.0
