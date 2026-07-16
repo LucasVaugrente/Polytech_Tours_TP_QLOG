@@ -29,7 +29,7 @@ async function load() {
 const eventsByDate = computed(() => {
   const map = {}
   for (const e of events.value) {
-    ;(map[e.event_date] ||= []).push(e)
+    (map[e.event_date] ||= []).push(e)
   }
   return map
 })
